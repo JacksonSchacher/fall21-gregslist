@@ -50,7 +50,9 @@ export class CarsController {
     showCars() {
         _drawCars()
         document.getElementById('controls').innerHTML = `
-      <button class="btn btn-info" onclick="app.carsController.toggleCarForm()">Add Car</button>
+      <button type="button" class="btn btn-info m-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Add Car
+</button>
     `
         document.getElementById('forms').innerHTML = getCarFormTemplate()
     }

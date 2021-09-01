@@ -46,7 +46,10 @@ export class JobsController {
     showJobs() {
         _drawJobs()
         document.getElementById('controls').innerHTML = `
-        <button class="btn btn-warning" onclick="app.jobsController.toggleJobForm()">Add Job</button>
+        
+        <button type="button" class="btn btn-warning m-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Add Job
+</button>
         `
         document.getElementById('forms').innerHTML = getJobForm()
     }

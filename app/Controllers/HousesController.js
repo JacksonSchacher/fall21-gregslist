@@ -46,7 +46,9 @@ export class HousesController {
     showHouses() {
         _drawHouses()
         document.getElementById('controls').innerHTML = `
-      <button class="btn btn-success" onclick="app.housesController.toggleHouseForm()">Add House</button>
+        <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Add House
+</button>
     `
         document.getElementById('forms').innerHTML = getHouseForm()
     }

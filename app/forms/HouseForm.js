@@ -1,5 +1,13 @@
 export function getHouseForm() {
     return /*html*/ `
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark">
+      <div class="modal-header text-light">
+      <h5 class="modal-title" id="staticBackdropLabel">Add House</h5>
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
     <form class="bg-white rounded p-3 shadow" onsubmit="app.housesController.addHouse()">
     <div class="form-group">
     <label for="bedrooms" class="sr-only">Bedrooms</label>
@@ -34,5 +42,9 @@ export function getHouseForm() {
         <button type="submit" class="btn btn-primary">Add</button>
     </div>
     </form>
+    </div>
+    </div>
+  </div>
+</div>
     `
 }
