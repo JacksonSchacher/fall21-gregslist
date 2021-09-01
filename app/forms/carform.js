@@ -1,7 +1,6 @@
 export function getCarFormTemplate() {
-  return /*html*/`
-  <form class="bg-white rounded p-3 shadow visually-hidden" onsubmit="app.carsController.addCar()"
-  id="car-form">
+    return /*html*/ `
+  <form class="bg-white rounded p-3 shadow" onsubmit="app.carsController.addCar()">
   <div class="form-group">
     <label for="make" class="">Make:</label>
     <select name="make" id="make" required class="form-control">
